@@ -1,0 +1,91 @@
+
+.productListMenu li a {
+  position: relative;
+  display: block;
+  padding: 24px 0;
+  border: 1px solid #DCDCDC;
+  font-size: 32px;
+  line-height: 48px;  
+  text-align: center;
+  color: #000000;
+  transition: .5s ease;
+}
+.productListMenu li a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .3s linear;
+}
+.productListMenu li a:hover::after,
+.productListMenu li a.active::after {
+  border-bottom: 8px solid #AA0601;
+}
+
+.productList {
+  padding: 80px 0px;
+  transition: .5s ease;
+}
+.productList h2 {
+  font-size: 42px;
+  line-height: 63px;
+  transition: .5s ease;
+}
+.productList p {
+  font-size: 32px;
+  line-height: 48px;
+  transition: .5s ease;
+}
+.productListItem p {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+.productListItem p:first-of-type {
+  @include color_000;
+}
+.productListItem p:last-of-type {
+  @include color_aa0;
+}
+.colorL, .colorR {
+  display: inline-block;
+  width: 24px;
+  height: 24px;  
+  border-radius: 4px;
+}
+.colorL {
+  margin-right: 8px;
+  background: #5F3E2D;
+}
+.colorR {
+  background: #B75929;
+}
+
+
+
+// Responsive
+
+@media (max-width: 992px) {
+  .productListMenu li a {
+    @include fontSize_24;
+    @include lineHeight_36;
+  }  
+}
+
+@media (max-width: 767px) {
+  .productList {
+    padding: 40px 0px;
+  }
+  .productListMenu li a {
+    font-size: 16px;
+    padding: 16px 0;
+    @include lineHeight_24;
+  }
+  .productList h2,
+  .productList p {
+    @include fontSize_24;
+    @include lineHeight_36;
+  }
+}

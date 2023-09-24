@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Roboto:ital,wght@0,500;0,700;1,900&display=swap');
+
+// 字型設定
+@mixin fontFamily_Roboto {
+  font-family: 'Roboto', serif;
+} 
+
+@mixin fontFamily_NotoSand {
+  font-family: 'Noto Sans TC', sans-serif;
+} 
+
+
+// 字體大小
+@mixin fonSize_64 {
+  font-size: 64px;
+}
+@mixin fonSize_48 {
+  font-size: 48px;
+}
+@mixin fonSize_36 {
+  font-size: 36px;
+}
+@mixin fonSize_32 {
+  font-size: 32px;
+}
+@mixin fontSize_24 {
+  font-size: 24px;
+}
+@mixin fontSize_20 {
+  font-size: 20px;
+}
+@mixin fontSize_14 {
+  font-size: 14px;
+}
+
+
+// 顏色設定
+@mixin bgColor_000 {
+  background: #000000;
+}
+@mixin color_000 {
+  color: #000000;
+}
+
+@mixin bgColor_FFF {
+  background: #ffffff;
+} 
+@mixin color_FFF {
+  color: #ffffff;
+} 
+
+@mixin bgColor_650 {
+  background: #650300;
+}
+@mixin color_650 {
+  color: #650300;
+}
+
+@mixin bgColor_fbf {
+  background: #fbf2f2;
+}
+@mixin color_fbf {
+  color: #fbf2f2;
+}
+
+@mixin bgColor_aa0 {
+  background: #aa0601;
+} 
+@mixin color_aa0 {
+  color: #aa0601;
+}
+@mixin bgColor_707 {
+  background: #707070;
+} 
+@mixin color_707 {
+  color: #707070;
+}
+
+
+// 文字行高
+@mixin lineHeight_80 {
+  line-height: 80px
+}
+
+@mixin lineHeight_72 {
+  line-height: 72px;
+}
+
+@mixin lineHeight_63 {
+  line-height: 63px;
+}
+
+@mixin lineHeight_54 {
+  line-height: 54px;
+}
+
+@mixin lineHeight_36 {
+  line-height: 36px;
+}
+
+@mixin lineHeight_30 {
+  line-height: 30px;
+}
+
+@mixin lineHeight_24 {
+  line-height: 24px;  
+} 
+
+@mixin lineHeight_21 {
+  line-height: 21px;  
+} 

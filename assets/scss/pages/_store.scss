@@ -1,0 +1,81 @@
+
+.store {
+  padding: 80px 0px;
+  transition: .5s ease;
+}
+
+.store h2 {
+  font-size: 48px;
+  @include lineHeight_72;
+  padding-left: 16px;
+  border-left: 8px solid #9F1213;
+  margin-bottom: 30px;
+  transition: .5s ease;
+}
+
+.store label {
+  @include fontSize_24;
+  @include lineHeight_36;
+  transition: .5s ease;
+}
+.store select {
+  font-size: 18px;
+  line-height: 26px;
+  color: #495057;
+  opacity: .75;
+  transition: .5s ease;
+}
+.locateInfoWrap {
+  border: 1px solid #00000020;  
+}
+.locateInfoWrap h3 {
+  @include fontSize_24;
+  @include lineHeight_36;
+  padding: 8px 0px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #00000020;
+  padding-left: 24px;
+  transition: .5s ease;
+}
+.locateInfo span:nth-of-type(1) {
+  font-size: 20px !important;
+  @include color_000; 
+}
+.locateInfo span:nth-of-type(2) {
+  font-size: 20px;
+  line-height: 30px;
+  @include color_000;
+  transition: .5s ease;
+}
+.btnLocateInfo {
+  display: block;
+  text-align: center;
+  padding: 16px 0px;
+  width: 100%;
+  @include bgColor_000;
+  @include color_FFF;
+  font-size: 19px;
+  line-height: 27px;
+  transition: .5s ease;
+}
+
+
+// Responsive
+
+@media (max-width: 767px) {
+  .store {
+    padding: 40px 0px;
+  }
+  .store h2 {
+    @include fontSize_24;
+    @include lineHeight_36;
+    margin-bottom: 24px;
+  }
+  .store label {
+    font-size: 16px;
+    @include lineHeight_24;
+  }
+  .store select {
+    width: 75% !important;
+  }
+}

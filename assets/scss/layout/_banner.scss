@@ -1,0 +1,58 @@
+.banner {
+  position: relative;
+  background-image: url(/assets/images/banner/home-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;     
+}
+.bannerHeadLine {
+  padding: 296px 0;
+  transition: .5s ease;
+}
+.bannerHeadLine h4 {
+  @include fonSize_36;
+  @include lineHeight_54;
+  @include color_650;
+  margin-bottom: 0;
+  transition: .5s ease;
+}
+.bannerHeadLine h3 {
+  font-size: 64px;
+  line-height: 96px;
+  @include color_650;
+  margin-bottom: 0;
+  transition: .5s ease;
+}
+.bannerHeadLine button {
+  padding: 6px 12px;
+  @include fontSize_20;
+  @include lineHeight_30;
+  @include color_FFF;
+  @include bgColor_aa0;
+  border: none;
+  transition: .8s ease;
+  cursor: pointer;
+}
+.bannerHeadLine button:hover {
+  @include bgColor_FFF;
+  @include color_aa0;
+}
+
+// Responsive
+
+@media (max-width: 767px) {
+  .banner {
+    background-image: url(/assets/images/banner/home-header-sm.png); 
+  }
+  .bannerHeadLine {
+    padding: 144px 0;
+  }
+  .bannerHeadLine h4 {
+    @include lineHeight_24;
+    font-size: 16px;
+  }
+  .bannerHeadLine h3 {
+    @include fontSize_24;
+    @include lineHeight_36;    
+  }
+}

@@ -1,0 +1,231 @@
+
+
+// profession  start
+
+.profession {
+  padding: 80px 0px;
+  @include bgColor_fbf;
+  transition: .5s ease;
+}
+.profession h2 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 48px;
+  @include lineHeight_72;
+  @include color_650;
+  transition: .5s ease;
+}
+.profession img {
+  width: 83.33px;
+}
+.profession h4 {
+  @include fontSize_24;
+  @include lineHeight_36;
+  @include color_650;
+}
+.profession p {
+  @include lineHeight_24;
+  @include color_000;
+}
+// profession  end
+
+
+
+// series start
+
+.series {
+  padding: 80px 0px;
+  transition: .5s ease;
+}
+.series h2 {
+  font-size: 48px;
+  @include lineHeight_72;
+  @include color_650;
+  text-align: center;
+  margin-bottom: 48px;
+  transition: .5s ease;
+}
+.series h3 {
+  font-size: 48px;
+  @include lineHeight_72;
+  @include color_aa0;
+  text-align: center;
+  margin-bottom: 48px;
+  font-style: italic;
+}
+// series end
+
+
+// glasses frame  start
+
+.frame {
+  background-image: url(/assets/images/frame/frameBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+  transition: .5s ease;
+}
+
+.frame h2 {
+  font-size: 48px;
+  @include lineHeight_72;
+  text-align: center;
+  @include color_FFF;
+  transition: .5s ease;
+  margin-bottom: 48px;
+}
+.frame h3 {
+  font-size: 48px;
+  @include lineHeight_72;
+  text-align: center;
+  @include bgColor_FFF;
+  transition: .5s ease;
+  @include color_aa0;
+  font-style: italic;
+}
+
+.frameList h2{
+  @include bgColor_FFF;
+  @include color_650;
+  transition: .5s ease;
+}
+
+// glasses frame  end
+
+
+// customer start
+
+.customer {
+  @include bgColor_FFF;
+  padding: 80px 0px;
+  transition: .5s ease;
+}
+
+.customer h2 {
+  font-size: 48px;
+  @include lineHeight_72;
+  @include color_650;
+  text-align: center;
+  margin-bottom: 48px;
+  transition: .5s ease;
+}
+.cardImg p:not(:last-of-type) {
+  @include lineHeight_24;
+  transition: .5s ease;
+}
+.cardImg p:last-of-type {
+  font-size: 14px;
+  @include lineHeight_21;
+  @include color_707;
+  transition: .5s ease;
+}
+
+// customer end
+
+// contactUS start
+
+.contactUSMain {
+  @include bgColor_fbf;
+  padding: 80px 0px;
+  transition: .5s ease;
+}
+
+.contactUSMain h2 {
+  font-size: 48px;
+  @include lineHeight_72;
+  @include color_650;
+  margin-bottom: 48px;
+  text-align: center;
+  transition: .5s ease;
+}
+.contactUSMain p {
+  @include fontSize_20;
+  @include lineHeight_30;
+  margin-bottom: 24px;
+  transition: .5s ease;
+}
+.contactUSMain form .form_input,
+.contactUSMain form textarea {
+  background: transparent;
+  resize: none;
+}
+.form-control:focus {
+  background: transparent;
+}
+.contactUSMain form ::placeholder {
+  @include lineHeight_24;
+  opacity: .2;
+}
+.btnWrap {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 0px;
+  border: none;
+  @include bgColor_aa0;
+  @include color_FFF;
+  @include lineHeight_24;
+  border: 2px solid #aa0601;
+  transition: .5s ease;
+}
+.btnWrap:hover {
+  @include bgColor_fbf;
+  @include color_aa0;
+}
+
+@media (max-width: 992px) {
+  .series {
+    padding: 80px 216px;
+  }
+}
+@media (max-width: 767px) {
+  .profession {
+    padding: 40px 0px;
+  }
+  .profession h2  {
+    @include fontSize_24;
+    @include lineHeight_36;
+  }
+  .series {
+    padding: 40px 0px;
+  }
+  .series h2 {
+    @include fontSize_24;
+    @include lineHeight_36;
+    margin-bottom: 24px;
+  }
+  .series h3 {
+    margin-bottom: 24px;
+  }
+  .frame {
+    padding: 40px 0px;
+  }
+  .frame h2 {
+    @include fontSize_24;
+    @include lineHeight_36;
+    margin-bottom: 24px;
+  }
+  .customer {
+    padding: 40px 0px;
+  }
+  .customer h2 {
+    @include fontSize_24;
+    @include lineHeight_36;
+    margin-bottom: 24px;
+  }
+  .contactUSMain {
+    padding: 40px 0;
+  }
+  .contactUSMain h2 {
+    @include fontSize_24;
+    @include lineHeight_36;
+    margin-bottom: 24px;
+  }
+  .contactUSMain p {
+    font-size: 16px;
+    @include lineHeight_24;
+  }
+  .btnWrap {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,38 @@
+
+
+.question {
+  padding: 80px 0px;
+  transition: .5s ease;
+}
+.question h2 {
+  font-size: 48px;
+  line-height: 72px;
+  padding-left: 16px;
+  border-left: 8px solid #9F1213;
+  margin-bottom: 32px;
+  transition: .5s ease;
+}
+.question .questionText {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 24px;
+  transition: .5s ease;
+}
+.questionMenu li:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+.questionMenu h4 {
+  font-size: 20px;
+  line-height: 30px;
+}
+.questionMenu p {
+  line-height: 24px;
+}
+
+// Responsive
+
+@media (max-width: 767px) {
+  .question {
+    padding: 40px 0px;
+  }
+}

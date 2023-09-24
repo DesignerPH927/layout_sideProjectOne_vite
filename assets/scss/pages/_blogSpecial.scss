@@ -1,0 +1,124 @@
+
+.blogSpecial {
+  padding-top: 24px;
+  padding-bottom: 80px;
+  transition: .5s ease;
+}
+
+.blogPath {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.blogPath li a {
+  display: block;
+  line-height: 24px;
+  color: #000000;  
+}
+.blogPath li:nth-of-type(4) a {
+  color: #AA0601;
+}
+.blogPathWrap span {
+  font-size: 24px;
+  line-height: 36px;
+  color: #AA0601;
+}
+.blogProject h2{
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 0;
+  transition: .5s ease;
+}
+.blogProject p {
+  font-size: 24px;
+  line-height: 36px;
+  transition: .5s ease;
+}
+.blogProjectList li {
+  margin-bottom: 40px;
+  transition: .5s ease;
+}
+.blogProjectList p {
+  line-height: 24px;
+  color: #555555;
+}
+.blogSocial {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 24px;
+  transition: .5s ease;
+}
+.blogSocial li a p {
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+.blogInterView {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogInterViewLeft,
+.blogInterViewRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000000;
+}
+.tagWrap div span {
+  color: #AA0601;
+}
+.tagWrap div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+.tagWrap div:first-of-type span:nth-of-type(1) {
+  font-size: 38px !important;
+  font-weight: bold;
+  transition: .5s ease;
+}
+.tagWrap div:first-of-type span:nth-of-type(2) {
+  font-size: 32px !important;
+  line-height: 48px;
+  font-weight: bold;
+  transition: .5s ease;
+}
+.tagWrap div:not(:first-of-type) span{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  transition: .5s ease;
+}
+
+
+// Responsive
+@media (max-width: 992px) {
+  .tagWrap div:first-of-type span:nth-of-type(1)
+  {
+    font-size: 20px !important;    
+  }
+  .tagWrap div:first-of-type span:nth-of-type(2),
+  .tagWrap div span {
+    font-size: 16px !important;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .blogSpecial {
+    padding-bottom: 60px;
+  }
+  .blogProject h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .blogProject p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .blogProjectList li {
+    margin-bottom: 16px;    
+  }
+}

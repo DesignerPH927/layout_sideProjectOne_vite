@@ -1,0 +1,26 @@
+
+.pagination {
+  margin-bottom: 80px;
+  transition: .5s ease; 
+}
+
+.pagination ul li a {
+  display: block;
+  padding: 11px 12px;
+  border: 1px solid #555555;
+  color: #555555;
+  transition: .3s ease;
+}
+.pagination ul li a:hover {
+  @include bgColor_000;
+  @include color_FFF;
+}
+
+
+// Responsive
+
+@media (max-width: 767px) {
+  .pagination {
+    margin-bottom: 64px;  
+  }
+}

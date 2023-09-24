@@ -1,0 +1,156 @@
+footer {
+  padding-top: 60px;
+  @include bgColor_aa0;
+  transition: .5s ease;
+}
+.footerMenuWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuLeft, .menuRight{
+  display: flex;
+  justify-content: space-between;  
+  gap: 48px;
+  transition: .5s ease;
+}
+
+.menuLeft li a {
+  position: relative;
+  display: block;
+  @include lineHeight_24;
+  @include color_FFF;
+}
+.menuLeft li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  @include bgColor_FFF;
+  transition: .3s ease;
+}
+.menuLeft li a:hover::after {
+  width: 100%;
+}
+
+.menuRight a {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.menuRight a img {
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+}
+.menuRight a:hover img {
+  transform: scale(1.2);
+}
+
+.contactUS {
+  padding: 32px 0px;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  transition: .5s ease;
+}
+.contactUS .menuRight {
+  display: none;
+}
+.contactUS ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  transition: .5s ease;
+}
+.contactUS ul li a span{
+  @include fonSize_36;
+  @include lineHeight_54;
+  @include color_FFF;
+  transition: .5s ease;
+}
+.contactUS ul li a:hover span{
+  color: aqua;
+}
+.copyMark p {
+  @include lineHeight_24;
+  @include color_FFF;
+  transition: .5s ease;
+}
+.clause {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  transition: .5s ease;
+}
+.clause li a{
+  font-size: 14px;
+  position: relative;
+  display: block;
+  @include lineHeight_21;
+  @include color_FFF;
+}
+.clause li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  @include bgColor_FFF;
+  transition: .5s ease;
+}
+
+.clause li a:hover::after {
+  width: 100%;
+}
+
+// Responsive
+
+@media (max-width: 767px) {
+  footer {
+    padding: 24px 0px;
+  }
+  .footerMenuWrap {
+    display: none;
+  }
+  .contactUS {
+    padding-bottom: 24px;
+    padding-top: 0;
+  }
+  .contactUS .menuRight {
+    display: flex;
+    gap: 8px;    
+  }
+  .menuRight a {
+    width: 24px; 
+    height: 24px;         
+  }
+  .contactUS ul li a {
+    gap: 8px;
+  }
+  .contactUS ul li a span {
+    font-size: 16px;
+    @include lineHeight_24;
+  }
+  .copyMark p {
+    padding-top: 16px;
+    font-size: 16px;
+    @include lineHeight_24;
+  }
+  .clause {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .clause li {
+    width: 100%;
+  }
+  .clause li a {
+    display: inline-block;
+  }
+}
